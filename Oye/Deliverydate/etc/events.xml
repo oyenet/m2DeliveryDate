@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/Event/etc/events.xsd">
+    <event name="sales_order_save_before">
+        <observer name="oye_deliverydate_sales_order_save_before" instance="Oye\Deliverydate\Model\Observer" method="saveDeliveryDateToOrder" />
+    </event>
+</config>

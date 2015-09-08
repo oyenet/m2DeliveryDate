@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Checkout\Model\ShippingInformationManagement">
+        <plugin name="save-in-quote"
+                type="Oye\Deliverydate\Model\Checkout\ShippingInformationManagementPlugin" sortOrder="10"/>
+    </type>
+
+    <virtualType name="Magento\Sales\Model\Resource\Order\Grid" type="Magento\Sales\Model\Resource\Grid">
+        <arguments>
+            <argument name="columns" xsi:type="array">
+                <item name="delivery_date" xsi:type="string">sales_order.delivery_date</item>
+            </argument>
+        </arguments>
+    </virtualType>
+
+</config>
