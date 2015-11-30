@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../lib/internal/Magento/Framework/Event/etc/events.xsd">
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
     <event name="core_layout_render_element">
-        <observer name="oye_deliverydate_add_to_order_view" instance="Oye\Deliverydate\Model\Observer" method="addHtmlToOrderShippingView" />
+        <observer name="oye_deliverydate_add_to_order_view" instance="Oye\Deliverydate\Model\Observer\AddHtmlToOrderShippingViewObserver" />
     </event>
 </config>
